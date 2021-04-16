@@ -7,3 +7,6 @@ mtc stands for ml_to_cloud, the project is focused on building a a ml system whi
 <font size = "6"> **Tasks** </font>
 - [ ]  Learn [Flutter](https://www.youtube.com/watch?v=RGdg-TCmldY)
 > - [ ] Setting up Flutter on my machine
+> - [ ] [Crash Course](https://www.youtube.com/watch?v=1gDhl4leEzA) on flutter
+> - [ ] Do some ```Code``` by putting up user signup page
+> - [ ]  Learn about [Flutter Firebase Authentication](https://www.youtube.com/watch?v=oJ5Vrya3wCQ)
