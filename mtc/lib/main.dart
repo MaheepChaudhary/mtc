@@ -1,5 +1,6 @@
 
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
@@ -17,28 +18,34 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text("firstapp"),
       ),
-      body: Center(
-        child: Container(
-          alignment: Alignment.center,
-          width: 100,
-          height: 100,
-          decoration: BoxDecoration(
-            color: Colors.blue,
-            shape: BoxShape.circle,
-            boxShadow: [BoxShadow(
-              color: Colors.grey,
-              blurRadius: 5,
-              offset: Offset(2.0,5.0),
-            )],
-            gradient: LinearGradient(
-                colors: [Colors.yellow, Colors.red]),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child :Align(alignment: Alignment.bottomRight,
+        child : Container(
+          color: Colors.black,
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          child : Row(
+            mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.red
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.green
+                  ),
+              Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.blue
+                ),
+             ],
             ),
-          child: Text(
-            "I am a Box.",
-            textAlign: TextAlign.center,
-            style:TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold),
           ),
         ),
       ),
