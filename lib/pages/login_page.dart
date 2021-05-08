@@ -1,3 +1,4 @@
+import 'package:awesomeapp/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:awesomeapp/bg_image.dart';
 import 'package:awesomeapp/pages/homepage.dart';
@@ -53,7 +54,8 @@ class login_page extends StatelessWidget {
                   // Navigator.push(
                   //   context, 
                   //   MaterialPageRoute(builder: (context) => Homepage()));
-                  Navigator.pushNamed(context, "/home");
+                  Constants.prefs.setBool("LoggedIn", true);
+                  Navigator.pushReplacementNamed(context, "/home");
                 },
                   color: Colors.green[500],
                   child: Text("Sign In"),
