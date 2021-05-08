@@ -1,5 +1,5 @@
 
-
+import 'package:awesomeapp/pages/home_page_with_fb.dart';
 import 'package:awesomeapp/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +16,7 @@ Future main() async{
     debugShowCheckedModeBanner: false,
     title: "Awesome App",
     home: Constants.prefs.getBool("LoggedIn") == true
-      ?Homepage()
+      ?HomepageFB()
       :login_page(),
     theme: ThemeData(
       primarySwatch: Colors.green

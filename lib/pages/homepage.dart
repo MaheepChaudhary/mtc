@@ -1,4 +1,4 @@
-import 'package:awesomeapp/drawer.dart';
+import 'package:awesomeapp/widgets/drawer.dart';
 import 'package:awesomeapp/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
